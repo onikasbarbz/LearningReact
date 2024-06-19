@@ -1,0 +1,92 @@
+* {
+  margin: 10px;
+}
+.image {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.studentDetails {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 0px auto;
+}
+#fname{
+  width: 159px;
+}
+#Contact{
+  width: 159px;
+}
+.details {
+  display: flex;
+ flex-direction:row;
+  margin: 0;
+  width: 90%;
+  gap: 105px;
+}
+form {
+  padding: 10px;
+  box-shadow: 0 0 30px 1px gray;
+  max-width: 1024px;
+}
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 1em;
+  font-weight: normal;
+}
+input {
+  height: 22px;
+  width: 148px;
+  border: none;
+  box-shadow: 2px;
+  box-shadow: 1px 1px 1px 1px rgba(126, 123, 123, 0.3);
+  padding: 9px;
+  border-style: none;
+  margin: 2px;
+}
+#Subject {
+  width: 345px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+#message {
+  width: 361px;
+  height: 150px;
+  box-shadow: 1px 1px 1px 1px rgba(126, 123, 123, 0.3);
+  font-family: Arial, Helvetica, sans-serif;
+  border-style: none;
+  margin: 0;
+}
+.fname {
+  flex:1;
+}
+.contact {
+  flex:1;
+}
+form label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin: 0;
+}
+button {
+  border-radius: 4px;
+  background-color: rgb(9, 153, 9);
+  cursor: pointer;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  border: none;
+}
+.image {
+  height: 300px;
+  /* max-width: 400px; */
+  width: 40%;
+  overflow: hidden;
+}
+.image img {
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+}

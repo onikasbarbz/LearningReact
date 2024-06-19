@@ -1,0 +1,43 @@
+.main {
+  margin: 0 auto;
+  background-image: linear-gradient(rgb(255, 88, 88), rgb(245, 75, 28));
+  width: 33em;
+  height: 35em;
+  border-radius: 5px;
+}
+h1 {
+  color: white;
+  text-align: center;
+}
+input {
+  font-size: 23px;
+}
+.add {
+  border: none;
+  color: rgb(33, 107, 255);
+  font-weight: bolder;
+  font-size: 20px;
+  background: none;
+}
+.input {
+  background-color: whitesmoke;
+  border: none;
+  margin: 0 auto;
+  width: 15em;
+  height: 45px;
+  border-radius: 0px 20px 20px 0px;
+  box-shadow: 2px 2px 10px 0.2px rgb(97, 96, 96);
+  font-size: 23px;
+  color: grey;
+}
+.list {
+  background-color: rgb(255, 251, 251);
+  margin: 0 auto;
+  max-width: 15em;
+  font-size: 23px;
+  box-shadow: 2px 2px 10px 0.2px rgb(97, 96, 96);
+  color: grey;
+}
+.delete {
+  color: red;
+}
