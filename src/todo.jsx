@@ -61,31 +61,35 @@ const Todo = () => {
                     value={editingTodo}
                     onChange={(e) => setEditingTodo(e.target.value)}
                   />
-                  <button className="update" onClick={() => updateTodo(todo.id)}>
+                  <button
+                    className="update"
+                    onClick={() => updateTodo(todo.id)}
+                  >
                     {" "}
                     <FontAwesomeIcon icon={faRightToBracket} />
                   </button>
                 </>
               ) : (
                 <>
-                <div className="Container">
-                  {todo.title}
-                  <div className="pen">
-                  <button className="edit"
-                    onClick={() => {
-                      setNewId(todo.id);
-                      setEditingTodo(todo.title);
-                    }}
-                  >
-                    <FontAwesomeIcon icon={faPen} />
-                  </button>
-                  <button
-                    className="delete"
-                    onClick={() => deleteTodo(todo.id)}
-                  >
-                    <FontAwesomeIcon icon={faTrashCan} />
-                  </button>
-                  </div>
+                  <div className="Container">
+                    {todo.title}
+                    <div className="pen">
+                      <button
+                        className="edit"
+                        onClick={() => {
+                          setNewId(todo.id);
+                          setEditingTodo(todo.title);
+                        }}
+                      >
+                        <FontAwesomeIcon icon={faPen} />
+                      </button>
+                      <button
+                        className="delete"
+                        onClick={() => deleteTodo(todo.id)}
+                      >
+                        <FontAwesomeIcon icon={faTrashCan} />
+                      </button>
+                    </div>
                   </div>
                 </>
               )}

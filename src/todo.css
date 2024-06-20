@@ -45,21 +45,21 @@ input {
   border: none;
   background-color: transparent;
 }
-.edit{
+.edit {
   color: rgb(38, 119, 233);
   border: none;
   background-color: transparent;
 }
-.update{
-  color: rgb(38, 119, 233) ;
+.update {
+  color: rgb(38, 119, 233);
   border: none;
   background-color: transparent;
 }
-.Container{
+.Container {
   display: flex;
   gap: 180px;
 }
-.pen{
+.pen {
   display: flex;
   gap: 13px;
 }
