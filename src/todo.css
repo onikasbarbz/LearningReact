@@ -11,10 +11,12 @@ h1 {
 }
 input {
   font-size: 23px;
+  height: 40px;
+  border: none;
 }
 .add {
   border: none;
-  color: rgb(33, 107, 255);
+  color: rgb(38, 119, 233);
   font-weight: bolder;
   font-size: 20px;
   background: none;
@@ -40,4 +42,24 @@ input {
 }
 .delete {
   color: red;
+  border: none;
+  background-color: transparent;
+}
+.edit{
+  color: rgb(38, 119, 233);
+  border: none;
+  background-color: transparent;
+}
+.update{
+  color: rgb(38, 119, 233) ;
+  border: none;
+  background-color: transparent;
+}
+.Container{
+  display: flex;
+  gap: 180px;
+}
+.pen{
+  display: flex;
+  gap: 13px;
 }
