@@ -1,0 +1,25 @@
+*{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.ColorContainer {
+  margin: 0 auto;
+  height: 40em;
+  max-width: 60em;
+  margin-top: 30px;
+  border-radius: 9px;
+}
+.ColorContainer button {
+  background-color: whitesmoke;
+  font-size: 25px;
+  border-radius: 4px;
+  margin: 55px;
+  height: 55px;
+  border: none;
+}
+button:hover{
+    background-color: thistle;
+}
+.ColorContainer h1{
+    font-size: 40px;
+    text-align: center;
+}
