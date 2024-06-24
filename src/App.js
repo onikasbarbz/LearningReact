@@ -1,8 +1,9 @@
-// import "./App.css";
+import "./App.css";
+import Quiz from "./Quiz";
 // import LogOnMount from "./LogonMount";
 // import Timer from "./Timer";
 // import DynamicTitle from "./DynamicTitle";
-import ColorGenerate from "./ColorGenerate";
+// import ColorGenerate from "./ColorGenerate";
 // import Card from "./card";
 // import Calculator from "./calculator";
 // import Todo from "./todo";
@@ -11,10 +12,10 @@ import ColorGenerate from "./ColorGenerate";
 function App() {
   return (
     <div>
-      <ColorGenerate />
-      {/* <LogOnMount/>
-      <Timer />
-      <DynamicTitle /> */}
+      <Quiz/>
+      {/* // <LogOnMount/>
+      // <Timer />
+      // <DynamicTitle /> */}
     </div>
     //   <Router>
     //     <div>

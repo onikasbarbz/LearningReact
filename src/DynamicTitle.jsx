@@ -7,7 +7,6 @@ function DynamicTitle() {
     document.title = title;
     console.log(`Title updated to: ${title}`);
   }, [title]); // Effect re-runs whenever 'title' changes
-
   return (
     <input
       type="text"
@@ -17,5 +16,4 @@ function DynamicTitle() {
     />
   );
 }
-
 export default DynamicTitle;
