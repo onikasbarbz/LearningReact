@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Quiz.css";
 const Quiz = () => {
   const questions = [
     {
-      questionText: " What is the main ingredient in guacamole?",
+      questionText: "(1) What is the main ingredient in guacamole?",
       answerOptions: [
         { answerText: "Tomato", isCorrect: false },
         { answerText: "Onion", isCorrect: false },
@@ -12,7 +12,7 @@ const Quiz = () => {
       ],
     },
     {
-      questionText: " Which country is famous for its sushi ?",
+      questionText: "(2) Which country is famous for its sushi ?",
       answerOptions: [
         { answerText: "Thailand", isCorrect: false },
         { answerText: "Japan", isCorrect: true },
@@ -22,7 +22,7 @@ const Quiz = () => {
     },
     {
       questionText:
-        "Which fruit is primary ingredient in traditional British summer pudding?",
+        "(3) Which fruit is primary ingredient in traditional British summer pudding?",
       answerOptions: [
         { answerText: "Strawberries", isCorrect: false },
         { answerText: "Raspberries", isCorrect: false },
@@ -32,7 +32,7 @@ const Quiz = () => {
     },
     {
       questionText:
-        "Which spice is often referred to as the 'queen of spices'?",
+        "(4) Which spice is often referred to as the 'queen of spices'?",
       answerOptions: [
         { answerText: "Cumin", isCorrect: false },
         { answerText: "Cinnamon", isCorrect: false },
@@ -41,7 +41,7 @@ const Quiz = () => {
       ],
     },
     {
-      questionText: "What type of fruit is granny smith?",
+      questionText: "(5) What type of fruit is granny smith?",
       answerOptions: [
         { answerText: "Pear", isCorrect: false },
         { answerText: "Apple", isCorrect: true },
@@ -50,7 +50,8 @@ const Quiz = () => {
       ],
     },
     {
-      questionText: "Which fruit is traditionally used in black forest cake?",
+      questionText:
+        "(6) Which fruit is traditionally used in black forest cake?",
       answerOptions: [
         { answerText: "Apple", isCorrect: false },
         { answerText: "Cherry", isCorrect: true },
@@ -59,7 +60,7 @@ const Quiz = () => {
       ],
     },
     {
-      questionText: "Which country is the largest producer of coffee?",
+      questionText: "(7) Which country is the largest producer of coffee?",
       answerOptions: [
         { answerText: "Colombia", isCorrect: false },
         { answerText: "Brazil", isCorrect: true },
@@ -68,7 +69,7 @@ const Quiz = () => {
       ],
     },
     {
-      questionText: "Which fruit is also known as chinese gooseberry?",
+      questionText: "(8) Which fruit is also known as chinese gooseberry?",
       answerOptions: [
         { answerText: "Lychee", isCorrect: false },
         { answerText: "Kiwi", isCorrect: true },
@@ -78,7 +79,7 @@ const Quiz = () => {
     },
     {
       questionText:
-        "Which Nepali food is spicy fermented leafy green vegitable dish?",
+        "(9) Which Nepali food is spicy fermented leafy green vegitable dish?",
       answerOptions: [
         { answerText: "Gundruk", isCorrect: true },
         { answerText: "Saag", isCorrect: false },
@@ -88,7 +89,7 @@ const Quiz = () => {
     },
     {
       questionText:
-        "What is the main ingredient in the Indian dish paneer tikka?",
+        "(10) What is the main ingredient in the Indian dish paneer tikka?",
       answerOptions: [
         { answerText: "Chicken", isCorrect: false },
         { answerText: "Fish", isCorrect: false },
@@ -103,10 +104,14 @@ const Quiz = () => {
   );
   // state to keep track of the user score
   const [score, setScore] = useState(0);
-  // state to track if the quiz has been submtted
+  // state to track if the quiz has been submitted
   const [submit, setSubmit] = useState(false);
   // state to track if all qns have been answered
   const [allAnswered, setAllAnswered] = useState(false);
+
+  useEffect(() => {
+    console.log(`Current score: ${score}`);
+  }, [score]);
 
   // function to handle answer selected
   const handleAnswerClick = (qIndex, isCorrect, answer) => {
@@ -142,15 +147,29 @@ const Quiz = () => {
                   onClick={
                     selectedAns[qIndex] === null
                       ? () =>
-                          handleAnswerClick(qIndex, answer.isCorrect, answer)
+                          handleAnswerClick(
+                            qIndex,
+                            answer.isCorrect,
+                            answer.answerText
+                          )
                       : null
                   }
+                  // style={{
+                  //   backgroundColor:
+                  //     selectedAns[qIndex] === answer.answerText
+                  //       ? answer.isCorrect
+                  //         ? "green"
+                  //         : "red"
+                  //       : "transparent",
+                  // }}
                   style={{
                     backgroundColor:
-                      selectedAns[qIndex] === answer
+                      selectedAns[qIndex] === answer.answerText
                         ? answer.isCorrect
                           ? "green"
                           : "red"
+                        : selectedAns[qIndex] !== null && answer.isCorrect
+                        ? "green"
                         : "transparent",
                   }}
                 >

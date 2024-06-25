@@ -1,6 +1,6 @@
 .quiz-container {
-  margin: 170px;
-  background-color: rgb(255, 189, 165);
+  margin: 180px;
+  background-color: rgb(255, 158, 13);
   border-radius: 10px;
   padding: 10px;
   margin-top: 30px;
@@ -19,20 +19,24 @@ ul {
   font-size: 17px;
 }
 li {
-  width: 140px;
+  width: 190px;
+  height: 30px;
+  font-size: 20px;
+  margin: 20px;
+  border-radius: 4px;
 }
 li:hover {
   font-weight: bold;
 }
 .score-text {
-  background-color: rgb(255, 115, 1);
+  background-color:rgb(255, 221, 87);
+  padding: 30px;
   margin: 10px auto;
   height: 50px;
   width: 50%;
   border-radius: 5px;
   text-align: center;
-  font-size: 25px;
-  font-weight: bold;
+  font-size: 30px;
 }
 .quiz-container button {
   padding: 10px;
