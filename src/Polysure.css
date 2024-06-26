@@ -1,6 +1,6 @@
 .box {
   height: 1000px;
-  width: 1920px;
+  width: 1000px;
 }
 
 .box .rectangle {
@@ -9,7 +9,7 @@
   left: 0;
   position: fixed;
   top: 0;
-  width: 1920px;
+  width: 1500px;
 }
 .navbar {
   align-items: center;
@@ -139,7 +139,7 @@
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
-  top: -28px;
+  top: -34px;
   width: 700px;
 }
 
@@ -172,13 +172,13 @@
   border-radius: 30px;
   display: flex;
   gap: 10px;
-  height: 25px;
+  height: 23px;
   justify-content: center;
   left: 205px;
   padding: 10px;
   position: absolute;
   top: 133px;
-  width: 140px;
+  width: 135px;
 }
 
 .banner-description .div {
@@ -201,7 +201,7 @@
   border-radius: 30px;
   display: flex;
   gap: 10px;
-  height: 25px;
+  height: 23px;
   justify-content: center;
   left: 34px;
   padding: 10px;
@@ -220,4 +220,326 @@
   position: relative;
   white-space: nowrap;
   width: fit-content;
+}
+
+.box-arrowLeft {
+  height: 60px;
+  width: 60px;
+}
+
+.box-arrowLeft .solar-arrow-left {
+  height: 60px;
+  position: absolute;
+  width: 60px;
+  top: 700px;
+  left: 60px;
+}
+.box-arrowRight {
+  height: 60px;
+  width: 60px;
+}
+
+.box-arrowRight .solar-arrow-right {
+  height: 70px;
+  position: absolute;
+  width: 67px;
+  top: 780px;
+  left: 57px;
+}
+
+.box2 {
+  height: 400px;
+  width: 430px;
+}
+
+.box2 .card-content {
+  height: 250px;
+  left: 70%;
+  position: relative;
+  top: 50%;
+  width: 400px;
+}
+
+.box2 .overlap-group {
+  height: 250px;
+  position: relative;
+}
+
+.box2 .rectangle {
+  border-radius: 30px 30px 0px 0px;
+  height: 250px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 430px;
+  object-fit: cover;
+}
+
+.box2 .div {
+  background-color: #28b6f3;
+  border-radius: 0px 0px 30px 30px;
+  height: 170px;
+  left: 0;
+  position: absolute;
+  top: 250px;
+  width: 430px;
+}
+
+.box2 .card-text {
+  height: 95px;
+  left: 32px;
+  position: absolute;
+  top: 290px;
+  width: 340px;
+}
+
+.box2 .individuals-family {
+  color: #000000;
+  font-family: "Roboto-Medium", Helvetica;
+  font-size: 25px;
+  font-weight: 500;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+}
+
+.box2 .text-wrapper {
+  color: #000000;
+  font-family: "Roboto-Regular", Helvetica;
+  font-size: 14.5px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 25px;
+  position: absolute;
+  top: 30px;
+  width: 340px;
+}
+
+.box2 .arrow {
+  background-color: #000000;
+  border: 4px solid;
+  border-color: #29b6f3;
+  border-radius: 30px;
+  height: 40px;
+  left: 340px;
+  position: absolute;
+  top: 220px;
+  width: 40px;
+}
+
+.box2 .solar-arrow-up {
+  height: 20px;
+  left: 11px;
+  position: absolute;
+  top: 10px;
+  width: 20px;
+}
+.box3 {
+  height: 400px;
+  width: 430px;
+}
+
+.box3 .card-content {
+  height: 300px;
+  left: 60%;
+  position: relative;
+  top: 50%;
+  width: 430px;
+}
+
+.box3 .overlap-group {
+  height: 300px;
+  position: relative;
+}
+
+.box3 .rectangle {
+  border-radius: 30px 30px 0px 0px;
+  height: 250px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 430px;
+  object-fit: cover;
+}
+
+.box3 .div {
+  background-color: #ee6352;
+  border-radius: 0px 0px 30px 30px;
+  height: 170px;
+  left: 0;
+  position: absolute;
+  top: 250px;
+  width: 430px;
+}
+
+.box3 .card-text {
+  height: 95px;
+  left: 32px;
+  position: absolute;
+  top: 290px;
+  width: 340px;
+}
+
+.box3 .individuals-family {
+  color: #000000;
+  font-family: "Roboto-Medium", Helvetica;
+  font-size: 25px;
+  font-weight: 500;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+}
+
+.box3 .text-wrapper {
+  color: #000000;
+  font-family: "Roboto-Regular", Helvetica;
+  font-size: 14.5px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 25px;
+  position: absolute;
+  top: 30px;
+  width: 340px;
+}
+
+.box3 .arrow {
+  background-color: #000000;
+  border: 4px solid;
+  border-color: #ee6352;
+  border-radius: 30px;
+  height: 40px;
+  left: 340px;
+  position: absolute;
+  top: 220px;
+  width: 40px;
+}
+
+.box3 .solar-arrow-up {
+  height: 20px;
+  left: 11px;
+  position: absolute;
+  top: 10px;
+  width: 20px;
+}
+
+.box4 {
+  height: 400px;
+  width: 430px;
+}
+
+.box4 .card-content {
+  height: 300px;
+  left: 50%;
+  position: relative;
+  top: 50%;
+  width: 430px;
+}
+
+.box4 .overlap-group {
+  height: 300px;
+  position: relative;
+}
+
+.box4 .rectangle {
+  border-radius: 30px 30px 0px 0px;
+  height: 250px;
+  left: 0px;
+  position: absolute;
+  top: 0;
+  width: 430px;
+  object-fit: cover;
+}
+
+.box4 .div {
+  background-color: #f9c809;
+  border-radius: 0px 0px 30px 30px;
+  height: 170px;
+  left: 0;
+  position: absolute;
+  top: 250px;
+  width: 430px;
+}
+
+.box4 .card-text {
+  height: 95px;
+  left: 32px;
+  position: absolute;
+  top: 290px;
+  width: 340px;
+}
+
+.box4 .individuals-family {
+  color: #000000;
+  font-family: "Roboto-Medium", Helvetica;
+  font-size: 25px;
+  font-weight: 500;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+}
+
+.box4 .text-wrapper {
+  color: #000000;
+  font-family: "Roboto-Regular", Helvetica;
+  font-size: 14.5px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 25px;
+  position: absolute;
+  top: 30px;
+  width: 340px;
+}
+
+.box4 .arrow {
+  background-color: #000000;
+  border: 4px solid;
+  border-color: #f9c809;
+  border-radius: 30px;
+  height: 40px;
+  left: 340px;
+  position: absolute;
+  top: 220px;
+  width: 40px;
+}
+
+.box4 .solar-arrow-up {
+  height: 20px;
+  left: 11px;
+  position: absolute;
+  top: 10px;
+  width: 20px;
+}
+.Boxes {
+  display: flex;
+  gap: 70px;
+  margin-top: -100px;
+}
+.boxAdobe {
+  top: 27%;
+  position: relative;
+  height: 130px;
+  width: 1900px;
+  padding-top: 65px;
+  background-color: #d9d9d9;
+  align-items: flex-start;
+  display: inline-flex;
+  gap: 60px;
+  position: relative;
+}
+.boxAdobe .image {
+  height: 60px;
+  position: relative;
+  width: 222px;
 }
