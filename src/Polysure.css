@@ -1,0 +1,223 @@
+.box {
+  height: 1000px;
+  width: 1920px;
+}
+
+.box .rectangle {
+  background-color: #252525;
+  height: 1000px;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 1920px;
+}
+.navbar {
+  align-items: center;
+  background-color: #252525;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: #515151;
+  display: flex;
+  gap: 200px;
+  height: 70px;
+  justify-content: center;
+  position: relative;
+  width: 1488px;
+}
+
+.navbar .text-wrapper {
+  color: #ffffff;
+  font-family: "Roboto-Medium", Helvetica;
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+  left: -25px;
+}
+
+.navbar .group {
+  height: 50px;
+  position: relative;
+  width: 1027px;
+}
+
+.navbar .div {
+  align-items: flex-start;
+  display: inline-flex;
+  gap: 30px;
+  left: 0;
+  position: absolute;
+  top: 14px;
+}
+
+.navbar .text-wrapper-2 {
+  color: #ffffff;
+  font-family: "Roboto-Light", Helvetica;
+  font-size: 17px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+  color: grey;
+}
+
+.navbar .frame {
+  align-items: center;
+  background-color: #3a3a3a;
+  border: 1px solid;
+  border-color: #515151;
+  border-radius: 30px;
+  display: flex;
+  gap: 10px;
+  height: 36px;
+  justify-content: center;
+  left: 590px;
+  padding: 4px;
+  position: absolute;
+  top: 0;
+  width: 125px;
+}
+
+.navbar .text-wrapper-3 {
+  color: #ffffff;
+  font-family: "Roboto-Regular", Helvetica;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.navbar .div-wrapper {
+  align-items: center;
+  background-color: #45c5fb;
+  border: 1px solid;
+  border-color: #515151;
+  border-radius: 30px;
+  display: flex;
+  gap: 10px;
+  height: 38px;
+  justify-content: center;
+  left: 745px;
+  padding: 3px;
+  position: absolute;
+  top: 0;
+  width: 140px;
+}
+
+.div-wrapper .text-wrapper-4 {
+  color: #1e1e1e;
+  font-family: "Roboto-Regular", Helvetica;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+.banner-description {
+  height: 170px;
+  position: relative;
+  width: 900px;
+  top: 100px;
+}
+
+.banner-description .heading {
+  color: #ffffff;
+  font-family: "Roboto-Light", Helvetica;
+  font-size: 70px;
+  left: 50px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: -28px;
+  width: 700px;
+}
+
+.banner-description .description-and {
+  height: 188px;
+  left: 737px;
+  position: absolute;
+  top: 20px;
+  width: 572px;
+}
+
+.banner-description .text-wrapper {
+  color: #ffffff;
+  font-family: "Roboto-Light", Helvetica;
+  font-size: 17px;
+  font-weight: 300;
+  left: 35px;
+  letter-spacing: 0;
+  line-height: 34px;
+  position: absolute;
+  top: 0;
+  width: 520px;
+}
+
+.banner-description .frame {
+  align-items: center;
+  background-color: #3a3a3a;
+  border: 1px solid;
+  border-color: #515151;
+  border-radius: 30px;
+  display: flex;
+  gap: 10px;
+  height: 25px;
+  justify-content: center;
+  left: 205px;
+  padding: 10px;
+  position: absolute;
+  top: 133px;
+  width: 140px;
+}
+
+.banner-description .div {
+  color: #ffffff;
+  font-family: "Roboto-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.banner-description .div-wrapper {
+  align-items: center;
+  background-color: #45c5fb;
+  border: 1px solid;
+  border-color: #515151;
+  border-radius: 30px;
+  display: flex;
+  gap: 10px;
+  height: 25px;
+  justify-content: center;
+  left: 34px;
+  padding: 10px;
+  position: absolute;
+  top: 133px;
+  width: 135px;
+}
+
+.banner-description .text-wrapper-2 {
+  color: #1e1e1e;
+  font-family: "Roboto-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}

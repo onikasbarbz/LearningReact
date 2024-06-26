@@ -1,5 +1,6 @@
 import "./App.css";
 import Quiz from "./Quiz";
+import Polysure from "./polysure";
 // import LogOnMount from "./LogonMount";
 // import Timer from "./Timer";
 // import DynamicTitle from "./DynamicTitle";
@@ -12,7 +13,8 @@ import Quiz from "./Quiz";
 function App() {
   return (
     <div>
-      <Quiz/>
+      <Polysure/>
+      {/* <Quiz/> */}
       {/* // <LogOnMount/>
       // <Timer />
       // <DynamicTitle /> */}
