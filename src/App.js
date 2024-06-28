@@ -1,6 +1,10 @@
+import { useState } from "react";
 import "./App.css";
-import Quiz from "./Quiz";
-import Polysure from "./polysure";
+import Hello from "./hello";
+import Third from "./third";
+// import Third from "./third";
+// import Quiz from "./Quiz";
+// import Polysure from "./polysure";
 // import LogOnMount from "./LogonMount";
 // import Timer from "./Timer";
 // import DynamicTitle from "./DynamicTitle";
@@ -9,11 +13,31 @@ import Polysure from "./polysure";
 // import Calculator from "./calculator";
 // import Todo from "./todo";
 // import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+// const FirstName = "Luniva";
+// const LastName ="Shrestha";
 
-function App() {
+const App = () => {
+  const [formData, setFormData] = useState({});
+
+  // Function to handle form submission
+  const handleFormSubmit = (data) => {
+    setFormData(data);
+  };
+
   return (
     <div>
-      <Polysure/>
+      <Hello onSubmit={handleFormSubmit} />
+      <Third
+        FullName={formData.fname}
+        Contact={formData.contact}
+        Subject={formData.subject}
+        Message={formData.message}
+      />
+      {/* <Third FirstName={FirstName} LastName={LastName}/>
+      <Third FirstName={"lasata"} LastName={"maharjan"}/>
+      <Third FirstName={"Samuel"} LastName={"Bajracharya"}/> */}
+      {/* <Hello/> */}
+      {/* <Polysure/> */}
       {/* <Quiz/> */}
       {/* // <LogOnMount/>
       // <Timer />
@@ -42,5 +66,5 @@ function App() {
     //     </div>
     //   </Router>
   );
-}
+};
 export default App;

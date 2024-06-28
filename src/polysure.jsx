@@ -1,7 +1,7 @@
 import React from "react";
 import "./Polysure.css";
-import RightArrow from "./asset/right.svg";
-import leftArrow from "./asset/left.svg";
+import RightButton from "./Button";
+import LeftButton from "./Button";
 import Box2 from "./asset/Box2.svg";
 import Box3 from "./asset/Box3.svg";
 import Box4 from "./asset/Box4.svg";
@@ -47,18 +47,10 @@ const polysure = () => {
       </div>
       <div className="CardsBox">
         <div className="box-arrowLeft">
-          <img
-            className="solar-arrow-left"
-            alt="Solar arrow left"
-            src={leftArrow}
-          />
+          <LeftButton />
         </div>
         <div className="box-arrowRight">
-          <img
-            className="solar-arrow-right"
-            alt="Solar arrow right"
-            src={RightArrow}
-          />
+          <RightButton />
         </div>
       </div>
       <div className="Boxes">
