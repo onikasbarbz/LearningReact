@@ -6,6 +6,7 @@ import YearlyCalendar from "./YearlyCalendar";
 import Aries from "./aries";
 import Horoscope from "./Horoscope";
 import PostForm from "./PostForm";
+import CardDisplay from "./CardDisplay";
 // import Third from "./third";
 // import Quiz from "./Quiz";
 // import Polysure from "./polysure";
@@ -29,7 +30,8 @@ const App = () => {
 
   return (
     <div>
-      <PostForm/>
+      <CardDisplay/>
+      {/* <Horoscope/> */}
       {/* <Aries/> */}
       {/* <Horoscope/> */}
       {/* <YearlyCalendar /> */}

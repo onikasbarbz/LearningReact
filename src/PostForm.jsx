@@ -4,6 +4,7 @@ const PostForm = () => {
   const [ShowData, setShowData] = useState({});
   const [GetData, setGetData] = useState("");
   const [loading, setLoading] = useState(false);
+  const [deleted, setDeleted] = useState("");
   const [formData, setFormData] = useState({
     id: 0,
     date: "",
@@ -18,6 +19,19 @@ const PostForm = () => {
     occupationRating: "",
     marriedLifeRating: "",
   });
+  const handleDelete = (e) => {
+    setDeleted(e.target.value);
+  };
+  const Delete = async () => {
+    try {
+      const response = await axios.delete(
+        `https://aligned.corvo.com.np/api/aries/${deleted}`
+      );
+      alert("Deleted successfully.");
+    } catch (error) {
+      console.log("error while deleting: ", error);
+    }
+  };
   const handleChange = (e) => {
     const { name, value } = e.target;
     let newFormData = { ...formData, [name]: value };
@@ -42,10 +56,10 @@ const PostForm = () => {
     try {
       const formDataToSend = new FormData();
       const selectedDate = new Date(formData.date);
-       const isoDateString = selectedDate.toISOString();
+      //  const isoDateString = selectedDate.toISOString();
       const formObjectToSend = {
         id: 0,
-        date: isoDateString,
+        // date: isoDateString,
         description: formData.description,
         luckyNumber: formData.luckyNumber,
         luckyColor: formData.luckyColor,
@@ -208,10 +222,17 @@ const PostForm = () => {
           value={formData.marriedLifeRating}
           onChange={handleChange}
         ></input>
-
         <button type="submit" disabled={loading}>
           {loading ? <>Submitting...</> : "Submit"}
         </button>
+        <label htmlFor="deleted"> Delete data:</label>
+        <input
+          type="text"
+          name="delete"
+          value={deleted}
+          onChange={handleDelete}
+        ></input>
+        <button onClick={Delete}> Delete</button>
       </form>
     </div>
   );
