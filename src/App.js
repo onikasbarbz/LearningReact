@@ -2,6 +2,10 @@ import { useState } from "react";
 import "./App.css";
 import Hello from "./hello";
 import Third from "./third";
+import YearlyCalendar from "./YearlyCalendar";
+import Aries from "./aries";
+import Horoscope from "./Horoscope";
+import PostForm from "./PostForm";
 // import Third from "./third";
 // import Quiz from "./Quiz";
 // import Polysure from "./polysure";
@@ -17,22 +21,25 @@ import Third from "./third";
 // const LastName ="Shrestha";
 
 const App = () => {
-  const [formData, setFormData] = useState({});
-
-  // Function to handle form submission
-  const handleFormSubmit = (data) => {
-    setFormData(data);
-  };
+  // const [formData, setFormData] = useState({});
+  // // Function to handle form submission
+  // const handleFormSubmit = (data) => {
+  //   setFormData(data);
+  // };
 
   return (
     <div>
-      <Hello onSubmit={handleFormSubmit} />
+      <PostForm/>
+      {/* <Aries/> */}
+      {/* <Horoscope/> */}
+      {/* <YearlyCalendar /> */}
+      {/* <Hello onSubmit={handleFormSubmit} />
       <Third
         FullName={formData.fname}
         Contact={formData.contact}
         Subject={formData.subject}
         Message={formData.message}
-      />
+      /> */}
       {/* <Third FirstName={FirstName} LastName={LastName}/>
       <Third FirstName={"lasata"} LastName={"maharjan"}/>
       <Third FirstName={"Samuel"} LastName={"Bajracharya"}/> */}
