@@ -72,7 +72,7 @@ const PostForm = () => {
         marriedLifeRating: formData.marriedLifeRating,
       };
       console.log("At the time of submit: ", JSON.stringify(formObjectToSend));
-
+      // post
       setLoading(true);
       const response = await axios.post(
         "https://aligned.corvo.com.np/api/aries",

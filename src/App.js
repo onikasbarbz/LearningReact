@@ -6,7 +6,8 @@ import YearlyCalendar from "./YearlyCalendar";
 import Aries from "./aries";
 import Horoscope from "./Horoscope";
 import PostForm from "./PostForm";
-import CardDisplay from "./CardDisplay";
+import Cart from "./Cart";
+import CartPost from "./CartPost";
 // import Third from "./third";
 // import Quiz from "./Quiz";
 // import Polysure from "./polysure";
@@ -30,7 +31,8 @@ const App = () => {
 
   return (
     <div>
-      <CardDisplay/>
+      <CartPost/>
+      {/* <Cart/> */}
       {/* <Horoscope/> */}
       {/* <Aries/> */}
       {/* <Horoscope/> */}

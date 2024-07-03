@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-const CardDisplay = () => {
+const Cart = () => {
   const [cartData, setCartData] = useState([]);
   const [error, setError] = useState(null);
 
@@ -59,4 +59,4 @@ const CardDisplay = () => {
   );
 };
 
-export default CardDisplay;
+export default Cart;
