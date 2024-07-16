@@ -3,7 +3,6 @@ import axios from "axios";
 const CartPost = () => {
   const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
-    cartId: 0,
     customerName: "",
     customerID: "",
     total: 0,
@@ -14,11 +13,9 @@ const CartPost = () => {
         itemName: "",
         price: 0,
         quantity: 0,
-        cartId: 0,
       },
     ],
     billingAddressData: {
-      billingID: 0,
       customerID: "",
       locationName: "",
       city: "",
@@ -26,9 +23,9 @@ const CartPost = () => {
       phoneNumber: "",
     },
   });
-//   useEffect(() => {
-//     console.log("Form data updated:", formData);
-//   }, [formData]);
+  //   useEffect(() => {
+  //     console.log("Form data updated:", formData);
+  //   }, [formData]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -50,10 +47,10 @@ const CartPost = () => {
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log("form submission triggered.");
     try {
       setLoading(true);
       const formObjectToSend = {
-        cartId: 0,
         customerName: formData.customerName,
         customerID: formData.customerID,
         total: formData.total,
@@ -63,7 +60,6 @@ const CartPost = () => {
           itemName: item.itemName,
           price: item.price,
           quantity: item.quantity,
-          cartId: 0,
         })),
 
         billingAddressData: {
@@ -75,8 +71,10 @@ const CartPost = () => {
           phoneNumber: formData.billingAddressData.phoneNumber,
         },
       };
+      console.log("Form object to end:");
+      console.log(JSON.stringify(formObjectToSend));
       const response = await axios.post(
-        "https://aligned.corvo.com.np/api/Cart",
+        "https://aligned.corvo.com.np/api/Cart?email=shresthaluniva73@gamil.com",
         JSON.stringify(formObjectToSend),
         {
           headers: {
@@ -85,10 +83,10 @@ const CartPost = () => {
         }
       );
       console.log("Response:", response.data);
-      if (response.status === 201) {
+      if (response.status === 200) {
         alert("Data added successfully!");
       } else {
-        alert("Failed to add data to cart . Plese try again.");
+        alert("Failed to add data to cart . Please try again.");
       }
     } catch (error) {
       console.log("Error:", error);
@@ -100,14 +98,6 @@ const CartPost = () => {
   return (
     <div>
       <form id="Post" onSubmit={handleSubmit}>
-        <label htmlFor="cartId">Cart Id:</label>
-        <input
-          type="number"
-          name="cartId"
-          value={formData.cartId}
-          onChange={handleChange}
-        ></input>
-        <br />
         <label htmlFor="customerName"> Customer Name:</label>
         <input
           type="text"
@@ -135,13 +125,6 @@ const CartPost = () => {
         <h2>Items:</h2>
         {formData.items.map((item, index) => (
           <div key={index}>
-            <label htmlFor={`id-${index}`}>Id:</label>
-            <input
-              type="number"
-              name="id"
-              value={item.id}
-              onChange={(e) => handleItemChange(index, e)}
-            ></input>
             <br />
             <label htmlFor={`productId-${index}`}>ProductId:</label>
             <input
@@ -175,24 +158,10 @@ const CartPost = () => {
               onChange={(e) => handleItemChange(index, e)}
             ></input>
             <br />
-            <label htmlFor={`cardId-${index}`}>CartId:</label>
-            <input
-              type="number"
-              name="cartId"
-              value={item.cartId}
-              onChange={(e) => handleItemChange(index, e)}
-            ></input>
-            <br />
           </div>
         ))}
         <h2>Billing Address:</h2>
-        <label htmlFor="billingID"> Billing ID:</label>
-        <input
-          type="number"
-          name="billingID"
-          value={formData.billingAddressData.billingID}
-          onChange={handleBillingChange}
-        ></input>
+
         <br />
         <label htmlFor="customerID"> Customer ID:</label>
         <input
