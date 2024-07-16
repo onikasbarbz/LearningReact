@@ -8,6 +8,7 @@ import Horoscope from "./Horoscope";
 import PostForm from "./PostForm";
 import Cart from "./Cart";
 import CartPost from "./CartPost";
+import Mui from "./Mui";
 // import Third from "./third";
 // import Quiz from "./Quiz";
 // import Polysure from "./polysure";
@@ -31,7 +32,8 @@ const App = () => {
 
   return (
     <div>
-      <CartPost/>
+      <Mui/>
+      {/* <CartPost/> */}
       {/* <Cart/> */}
       {/* <Horoscope/> */}
       {/* <Aries/> */}
